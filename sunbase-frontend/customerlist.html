@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="customerlist.css">
+</head>
+
+<body>
+    <div id="root">
+
+        <div id="content">
+            <h1>Customer List</h1>
+            <div id="menu">
+                <button id="add-btn">Add Customer</button>
+
+                <select id="selection">
+                    <option value="Search By" selected disabled hidden>Search By</option>
+                    <option value="firstName">First Name </option>
+                    <option value="city">City</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+                <input type="text" id="search-bar">
+                <button id="search-btn">Search</button>
+                <button id="sync-btn">Sync</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>Street</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>Sakshi</td>
+                        <td>Sharma</td>
+                        <td>lane 423</td>
+                        <td>Delhi</td>
+                        <td>Delhi</td>
+                        <td>Delhi</td>
+                        <td>sakshisharma@gmail.com</td>
+                        <td>223940490</td>
+                        <td>
+                            <button class="btn" id="del">Delete</button>
+                            <button class="btn" id="edit">Edit</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+
+            </table>
+            <div id="nav-div">
+                <button id="prev"> prev</button>
+                <button id="next"> next </button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script defer src="customerlist.js"></script>
+</body>
+
+</html>
